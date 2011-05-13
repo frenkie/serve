@@ -1,6 +1,6 @@
 # Serve
 
-Serve is a file server with support for JSON(P). Originally intended as a JavaScript file server
+Serve is a Node.js file server with support for JSON(P). Originally intended as a JavaScript file server
 for delivering (template) files raw, as JSON or as JSONP. The latter on behalf
 of client-side cross domain serving.
 

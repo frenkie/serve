@@ -5,6 +5,8 @@ for delivering (template) files raw, as JSON or as JSONP. The latter on behalf
 of client-side cross domain serving.
 
 Current Version: **0.1.0**
+Currently tested Node.js version: **0.5.0**
+
 
 ## Usage
 

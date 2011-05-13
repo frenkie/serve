@@ -1,0 +1,10 @@
+{
+  "name" : "serve",
+  "description" : "a node file server with support for JSON(P)",
+  "url" : "http://github.com/frenkie/serve",
+  "keywords" : ["file server", "templates", "json"],
+  "author" : "Frank Bosma <frank@frankbosma.nl>",
+  "version" : "0.1.0",
+  "main" : "./lib/serve"
+}
+

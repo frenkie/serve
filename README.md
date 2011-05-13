@@ -1,4 +1,11 @@
 # Serve
 
-My first Node.js attempt to a JavaScript file and template server with support for JSON(P)
+Serve is a JavaScript file server with support for JSON(P)
+
+
+## Usage
+
+Serve can be fired up with or without configuration.
+
+## Examples
 

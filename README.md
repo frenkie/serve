@@ -75,7 +75,8 @@ All methods return an instance of `events.EventEmitter` and emit a `serve.DATA` 
 
 #### serve.request()
 
-Will determine whether to serve a file raw, as JSON or as JSONP based on the request's query parameters.
+Will determine whether to serve a file raw, as JSON or as JSONP based on the request's query parameters,
+as defined in the defaultConfig mentioned above.
 
     serve().request({
             httpRequest : httpRequest, //{http.ServerRequest} required

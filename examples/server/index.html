@@ -3,8 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>An index file</title>
+    <style>
+
+        body{
+            font-family:"Georgia","Arial",sans-serif;
+        }
+    </style>
 </head>
 <body>
     <h1>Welcome to the example server</h1>
+
+    <p>This page is not intended to be called directly, but through the example server.</p>
+
+    <p>So fire it up by navigating to <code>/examples/server</code> and execute <code>node server</code>.</p>
+
+    <p>From there you can try out Serve.</p>
+
+    <h2>Examples</h2>
+
+    <h3>serve.raw()</h3>
+
+    <ul>
+        <li><a href="http://localhost:8008/">index.html</a> (as a fallback for requesting a directory)</li>
+        <li><a href="http://localhost:8008/js/test.js">js/test.js</a></li>
+        <li><a href="http://localhost:8008/template/mustache.html">template/mustache.html</a></li>
+    </ul>
+
+    <h3>serve.json()</h3>
+
+    <ul>
+        <li><a href="http://localhost:8008/js/test.js?json=data">js/test.js?json=data</a></li>
+        <li><a href="http://localhost:8008/template/mustache.html?json=data">template/mustache.html?json=data</a></li>
+    </ul>
+
+    <h3>serve.jsonp()</h3>
+
+    <ul>
+        <li><a href="http://localhost:8008/js/test.js?json=notdefault&callback=example">js/test.js?json=notdefault&callback=example</a></li>
+        <li><a href="http://localhost:8008/js/test.js?callback=example">js/test.js?callback=example</a> (jsonAttribute defaults to 'data')</li>
+        <li><a href="http://localhost:8008/template/mustache.html?json=notdefault&callback=example">template/mustache.html?json=notdefault&callback=example</a></li>
+        <li><a href="http://localhost:8008/template/mustache.html?callback=example">template/mustache.html?callback=example</a> (jsonAttribute defaults to 'data')</li>
+    </ul>
+
 </body>
 </html>

@@ -48,8 +48,11 @@ Initialisation:
 Serve exposes the following methods
 
 1.request
+
 2.raw
+
 3.json
+
 4.jsonp
 
 All methods return an instance of `events.EventEmitter` and emit a `serve.DATA` or `serve.ERROR` event.

@@ -17,7 +17,7 @@ define whether the request is served raw, as JSON or as JSONP or you can call Se
 
 Serve can be initialised with or without configuration.
 
-The default configuration is as followed
+The default configuration is as follows
 
     defaultConfig = {
 
@@ -31,6 +31,7 @@ The default configuration is as followed
         //Serve.json and jsonp config
         jsonAttribute : "data", //the return attribute for a direct json(p) request, i.e {"data" : "<filecontents>"}
         jsonCallback : "callback" //the default jsonp callback function, i.e callback( { "data" : "<filecontents>"} );
+        treatJsonAsJson : true //JSON data from .json files will be returned as a JSON object instead of a string
     };
 
 Initialisation:
@@ -118,8 +119,9 @@ as defined in the defaultConfig mentioned above.
                 "key" : "value",
                 "key" : "value"
             },
-            jsonAttribute : "jsonAttribute" //{String} [optional] The return attribute for json data,
+            jsonAttribute : "jsonAttribute", //{String} [optional] The return attribute for json data,
                                             // defaults to the one defined in Serve's config
+            fileIsJson : false //{Boolean} [optional] force return of file data as a JSON object instead of a string
         })
         .on(serve.DATA, dataHandler)
         .on(serve.ERROR, errorHandler);
@@ -136,8 +138,9 @@ as defined in the defaultConfig mentioned above.
             },
             jsonAttribute : "jsonAttribute",//{String} [optional] The return attribute for json data,
                                             // defaults to the one defined in Serve's config
-            jsonCallback : "jsonCallback"   //{String} [optional] The jsonp callback function,
+            jsonCallback : "jsonCallback",   //{String} [optional] The jsonp callback function,
                                             // defaults to the one defined in Serve's config
+            fileIsJson : false //{Boolean} [optional] force return of file data as a JSON object instead of a string
         })
         .on(serve.DATA, dataHandler)
         .on(serve.ERROR, errorHandler);

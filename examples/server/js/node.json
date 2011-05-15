@@ -1,0 +1,14 @@
+{
+    "name": "node.js",
+    "description" : "Evented I/O for V8 JavaScript.",
+    "api": [{
+            "namespace" : "events",
+            "title": "Events",
+            "description" : "Many objects in Node emit events: a net.Server emits an event each time a peer connects to it, a fs.readStream emits an event when the file is opened."
+        },
+        {
+            "namespace" : "http",
+            "title": "HTTP",
+            "description" : "The HTTP interfaces in Node are designed to support many features of the protocol which have been traditionally difficult to use."
+        }
+    ]}
